@@ -15,7 +15,7 @@
 		<!-- top header-->
 		<div class="top-header">
 			<div class="container-wrapper">
-				<nav class="navbar navbar-expand-lg">
+				<nav class="navbar navbar-expand-lg px-lg-0">
 				  <a class="navbar-brand" href="#">
 				  	<img src="./assets/img/makeup-world-bd-logo.jpg" alt="makeup-world-bd-logo">
 				  </a>
@@ -66,11 +66,30 @@
 		<!-- main header-->
 		<div class="main-header">
 			<div class="container-wrapper">
-				<div class="d-flex align-item-center">
-					<div class="btn-catagory">
-						<button class="btn btn-light shadow-none"><i class="mdi mdi-format-list-bulleted"></i></button>
-						<p class="mb-0">Shop By <br>
-						<span>Categories</span></p>
+				<div class="row align-item-center">
+					<div class="col-lg-3">
+						<div class="btn-catagory">
+							<button class="btn btn-light shadow-none"><i class="mdi mdi-format-list-bulleted"></i></button>
+							<p class="mb-0">Shop By <br>
+							<span>Categories</span></p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="search-box">
+							<div class="input-group mb-3">
+							  <div class="input-group-prepend">
+							    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+							    <div class="dropdown-menu">
+							      <a class="dropdown-item" href="#">Action</a>
+							      <a class="dropdown-item" href="#">Another action</a>
+							      <a class="dropdown-item" href="#">Something else here</a>
+							      <div role="separator" class="dropdown-divider"></div>
+							      <a class="dropdown-item" href="#">Separated link</a>
+							    </div>
+							  </div>
+							  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
