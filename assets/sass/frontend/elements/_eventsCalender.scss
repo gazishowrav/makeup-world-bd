@@ -1,0 +1,181 @@
+.calendar-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.calendar-container header {
+    position: relative;
+    border-radius: 1em 1em 0 0;
+    background: $primary;
+    padding: 1em 2em;
+    border-bottom: 1px solid #dadada;
+    overflow: hidden;
+}
+.calendar-container header span.shape {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background: #fff;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 50%;
+    opacity: 0.2;
+}
+.cal-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.day {
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1em;
+    color: #fff;
+}
+
+.month {
+    font-size: 2em;
+    line-height: 1em;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.year {
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1em;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.calendar {
+    margin-bottom: 1.5rem;
+}
+
+.calendar-body {
+    background: #fdfdfd;
+    border-radius: 0 0 1em 1em;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #fff;
+    color: #555;
+    display: block;
+    padding: 2em;
+}
+
+.calendar thead {
+    color: #756c6c;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.calendar td {
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.calendar tbody td:hover {
+    background: $light;
+    color: $dark;
+}
+
+.current-day {
+    color: #000;
+    font-weight: 700;
+}
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 1rem;
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    margin-top: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.left-arrow {
+    left: 0;
+}
+.right-arrow {
+    right: 0;
+}
+
+
+.upcoming-event {
+    color: #fff;
+    background: #756c6c;
+}
+
+.calander-button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-view {
+    padding: 0.225rem 1rem;
+    border: 1px solid #5d5858;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: 0.5rem;
+    text-align: center;
+    color: #5d5858;
+    text-decoration: none;
+}
+.btn-view:hover {
+    color: $primary;
+    border-color: $primary;
+    text-decoration: none;
+}
+
+.prev-month,
+.next-month {
+    color: #756c6c;
+}
+
+.ring-left,
+.ring-right {
+    position: absolute;
+    top: 150px;
+}
+
+.ring-left {
+    left: 2em;
+}
+
+.ring-right {
+    right: 2em;
+}
+
+.ring-left:before,
+.ring-left:after,
+.ring-right:before,
+.ring-right:after {
+    background: #756c6c;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .3), 0 -1px 1px rgba(0, 0, 0, .2);
+    content: "";
+    display: inline-block;
+    margin: 8px;
+    height: 32px;
+    width: 8px;
+}
+
+@media (max-width:992px) {
+    .calendar {
+        display: block;
+        padding: 2em;
+    }
+
+    .calendar td {
+        padding: .5em;
+    }
+}

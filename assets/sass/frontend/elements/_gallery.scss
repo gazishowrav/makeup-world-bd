@@ -1,0 +1,175 @@
+.portfolio {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.portfolio .filter-menu {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.portfolio .filter-menu .list-filter {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 12px 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    border: 1px solid #d6d6d6;
+}
+
+.portfolio .list-filter li {
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    line-height: 1;
+    cursor: pointer;
+    color: #888;
+    background: transparent;
+    font-size: 14px;
+    border-radius: 25px;
+}
+
+.portfolio .list-filter .active {
+    color: $primary;
+}
+
+.portfolio .portfolio-content .item {
+    min-height: 330px;
+    max-height: 330px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+}
+
+.portfolio .portfolio-content .item .demo-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-content .item:hover .demo-image img {
+    transition: transform 1s ease;
+}
+.portfolio .portfolio-content .item:hover .demo-image img {
+    transform: scale(1.2);
+}
+
+.portfolio .item .demo-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(64, 63, 63, 0);
+    width: 100%;
+    height: 100%;
+    margin-top: -100%;
+    transition-duration: all .6s linear;
+}
+
+.portfolio .item:hover .demo-image .overlay {
+    margin-top: 0;
+}
+.portfolio .item .demo-image .overlay.video-overlay {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.portfolio .item .demo-image .overlay .item-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio .item .demo-image .overlay .item-icons i {
+    display: inline-block;
+    background-color: $primary;
+    color: #fff;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.portfolio .item .demo-image .overlay.video-overlay .item-icons i {
+    background-color: #fff;
+    color: $dark;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+.portfolio .item:hover .demo-image .overlay.video-overlay .item-icons i {
+    background-color: #FF0000;
+    color: #fff;
+}
+.portfolio .item .demo-image .overlay .item-icons i:hover {
+    background-color: #fff;
+    color: $primary;
+}
+
+.portfolio .item .demo-image .overlay .item-icons .icon-img {
+    margin-right: 20px;
+}
+
+.portfolio .portfolio-content .item .item-info {
+    text-align: center;
+    padding: 14px 0 6px;
+}
+
+.portfolio .portfolio-content .item .item-info h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .4px;
+    text-transform: capitalize;
+    color: #3e3e3e;
+}
+
+.portfolio .portfolio-content .item:hover .item-info h4 {
+    color: $primary;
+}
+
+.portfolio .portfolio-content .item .item-info span {
+    letter-spacing: .3px;
+    text-transform: capitalize;
+    color: #888;
+}
+
+.portfolio .my-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolio .my-btn .main-btn {
+    min-width: 155px;
+}
+
+.main-btn {
+    background: $primary;
+    color: #fff;
+    min-width: 175px;
+    border-radius: 40px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    text-align: center;
+    padding: 13px 25px;
+    border: 2px solid $primary;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    margin-right: 14px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    transition: all 0.3s ease;
+}
+.main-btn:hover {
+    background: $primary;
+    color: #fff;
+    text-decoration: none;
+}

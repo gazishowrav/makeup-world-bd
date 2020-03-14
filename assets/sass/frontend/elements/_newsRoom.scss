@@ -1,0 +1,91 @@
+.newsBlog {
+    background: #F9F9F9;
+    padding: 4rem 0;
+}
+
+.newsBlog .card {
+    height: 500px;
+    overflow: hidden;
+    transition: all ease .35s;
+}
+
+.newsBlog .card:hover {
+    box-shadow: 0 5px 25px rgba(0,0,0,.15);
+    transition: all ease .35s;
+}
+
+.newsBlog .card::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 4px;
+    background-image: -webkit-linear-gradient(left,rgba(237, 28, 36,0.92) 0%,#FF4141 30%);
+    background-image: linear-gradient(to right,rgba(237, 28, 36,0.92) 0%,#FF4141 30%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EBFE7C44',endColorstr='#FFFF4141',GradientType=1);
+    transition: all ease .35s;
+}
+.newsBlog .card:hover::before {
+    width: 76%;
+    transition: all ease .35s;
+}
+
+.newsBlog .card .card-header img {
+    width: 150px;
+    height: 150px;
+    border-bottom-right-radius: 50%;
+    object-fit: cover;
+    border-right: 9px solid $primary;
+}
+.newsBlog .card .card-body {
+    height: 200px;
+}
+.newsBlog .card .card-body h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+.newsBlog .card .card-body .post-description {
+    height: 100px;
+}
+.newsBlog .card .card-body .main-btn {
+    border-radius: 4px;
+    min-width: 150px;
+    padding: 10px 15px;
+    visibility: hidden;
+}
+.newsBlog .card:hover .card-body .main-btn {
+    visibility: visible;
+}
+.newsBlog .card .post-date {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    color: $black;
+    font-weight: 600;
+}
+.newsBlog .card .post-date span {
+    display: inline-block;
+    margin: 0 5px;
+    width: 21px;
+    vertical-align: middle;
+    height: 1px;
+    background-color: $black;
+}
+
+.newsBlog .card span.round-shape {
+    width: 150px;
+    height: 150px;
+    background: $primary;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin-top: -60px;
+}

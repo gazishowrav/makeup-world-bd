@@ -1,0 +1,52 @@
+.memberCalender {
+    background: $light;
+    padding: 4rem 0;
+}
+
+.becomeMember {
+    border-radius: 10px;
+    background: #fff;
+}
+
+.becomeMember img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.becomeMember h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.becomeMember p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.becomeMember button {
+    min-width: 100px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+}
+.becomeMember button:hover {
+    border: 1px solid $primary;
+    background: $primary;
+    color: #fff;
+}
+.becomeMember .carousel-control-next, 
+.becomeMember .carousel-control-prev {
+    width: 0%;
+    bottom: -20%;
+}
+.becomeMember .carousel-control-next span, 
+.becomeMember .carousel-control-prev span {
+    color: $primary;
+}

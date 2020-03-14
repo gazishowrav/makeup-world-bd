@@ -1,0 +1,55 @@
+// header
+
+.header {
+    .top-header {
+        padding: 13px 0;
+        .navbar-brand {
+            img {
+                height: 50px;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: $dark;
+                    padding: 1rem;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $themered;
+                    }
+                    &.btn {
+                        padding: .8rem 1.5rem;
+                        font-size: 16px;
+                        background: #e3222a;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .main-header {
+        background: #403f3f;
+        .btn-catagory {
+            background: #d02a31;
+            color: #DDDDDD;
+            width: 18rem;
+            text-align: left;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 15px;
+                padding-left: 10px;
+                line-height: 18px;
+                span {
+                    color: #ffffff;
+                    font-weight: 700;
+                    letter-spacing: 0.05rem;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

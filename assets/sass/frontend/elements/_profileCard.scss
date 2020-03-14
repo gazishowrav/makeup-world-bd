@@ -1,0 +1,129 @@
+// committee
+
+.basis-member.committee {
+    padding: 4rem 0;
+}
+
+.basis-member.committee .member-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.basis-member.committee .member-box .card-body {
+    position: relative;
+    height: 150px
+}
+.basis-member.committee .member-box .shape {
+    width: 200px;
+    height: 200px;
+    background: $primary;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transform: rotate(45deg);
+}
+
+.basis-member.committee .member-box .card-img-top {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.basis-member.committee .member-box:hover .card-img-top {
+    box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1)
+}
+
+.basis-member.committee .member-box .member-degignation {
+    color: $success;
+}
+
+.basis-member.committee .member-box .member-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+.basis-member.committee .member-box small {
+    font-size: 12px;
+}
+
+.basis-member.committee .member-box .social a {
+    font-size: 15px;
+    color: $success;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.basis-member.committee .member-box .card-footer {
+    background-color: transparent;
+    border: 0;
+}
+
+
+// staff
+
+.basis-member.staff {
+    padding: 4rem 0;
+}
+
+.basis-member.staff button {
+    color: $dark;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+}
+.basis-member.staff button[aria-expanded="true"]::before {
+    content: "\F377";
+    font-family: "Material Design Icons";
+    float: right;
+}
+.basis-member.staff button[aria-expanded="false"]::before {
+    content: "\F419";
+    font-family: "Material Design Icons";
+    float: right;
+}
+
+.basis-member.staff .member-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.basis-member.staff .member-box .card-body {
+    position: relative;
+    height: 150px
+}
+.basis-member.staff .member-box .shape {
+    width: 200px;
+    height: 200px;
+    background: $primary;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transform: rotate(45deg);
+}
+
+.basis-member.staff .member-box .card-img-top {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    border-bottom: 5px solid $primary;
+}
+
+.basis-member.staff .member-box .member-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}

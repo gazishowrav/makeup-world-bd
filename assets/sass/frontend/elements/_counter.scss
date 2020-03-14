@@ -1,0 +1,29 @@
+.num-counter {
+    background: $light;
+    padding: 5rem 0;
+}
+
+.num-counter .box {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: block;
+}
+
+.num-counter .box h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.num-counter .box span.count-num {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.num-counter .box img,
+.num-counter .box svg {
+    width: 45px;
+    display: block;
+    margin: 0 auto;
+}

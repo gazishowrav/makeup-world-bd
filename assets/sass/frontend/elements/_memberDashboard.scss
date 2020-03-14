@@ -1,0 +1,239 @@
+.sidebar {
+	border-left: 3px solid $primary;
+}
+.sidebar .user {
+	display: flex;
+	align-items: center;
+}
+.sidebar .user img {
+	width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: contain;
+    padding: 5px;
+}
+.sidebar .user .userName h2 {
+	font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.sidebar .user .userName h5 {
+    font-size: 0.7125rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.member-services .card .card-header .nav-item .nav-link {
+    background: transparent;
+    color: $black;
+    outline: none;
+    border: 0;
+}
+.member-services .card .card-header .nav-item .nav-link.active {
+    color: $danger;
+}
+
+.member-services a {
+    text-decoration: none;
+}
+
+.member-services .card-box {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+}
+.member-services .card-box i {
+    font-size: 24px;
+    padding-right: 10px;
+    color: #fff;
+}
+.member-services .card-box h4 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.company-dashboard .member-services .card .card-header {
+    background: transparent;
+    border-bottom: 1px solid $light;
+    border-top: 3px solid $primary;
+}
+.company-dashboard .member-services .payment-info .card-body .nav-item .nav-link {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark;
+    padding: .225rem 1.5rem;
+    line-height: 16px;
+}
+.company-dashboard .member-services .payment-info .card-body .nav-item .nav-link::before {
+    content: "\F63E";
+    font-family: "Material Design Icons";
+    position: absolute;
+    left: 0;
+}
+
+.company-dashboard .member-services .card .card-body .nav-link date {
+    font-size: 11px;
+    font-weight: 500;
+}
+.company-dashboard .member-services .card .card-body .nav-link i {
+    font-size: 11px;
+}
+
+.company-dashboard .member-services .company-info .card-body th,
+.company-dashboard .member-services .company-info .card-body td {
+    color: $dark
+}
+
+
+.company-dashboard .member-services .event .card-body .nav-item .nav-link {
+    border-bottom: 1px solid #ececec;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.company-dashboard .member-services .event .card-body .nav-item:last-child .nav-link {
+    border-bottom: 0;
+}
+.company-dashboard .member-services .payment-info .nav-item .nav-link img {
+    max-width: 30px;
+    height: 30px;
+}
+
+.sidemenu {
+    border-left: 3px solid $primary;
+}
+.sidemenu .nav-item  {
+    background: linear-gradient(to bottom, #f5f5f5, #fff);
+    padding: 0 1rem;
+}
+.sidemenu .nav-item .nav-link {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark;
+    padding: .5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+.sidemenu .nav-item .nav-link:hover {
+    color: $black;
+}
+.sidemenu .nav-item .nav-link::before {
+    content: "\F13E";
+    font-family: "Material Design Icons";
+    position: absolute;
+    left: 0;
+}
+
+.company-notify .blockquote p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.company-notify .blockquote-footer {
+    margin-top: 15px;
+}
+.company-notify date {
+    font-size: 12px;
+    color: $dark;
+}
+.company-notify .btn-send {
+    font-size: 15px;
+    font-weight: 500;
+    background: $primary;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.company-notify .table a {
+    font-weight: bold;
+    color: $dark;
+}
+
+.data-process ol {
+  list-style-type: none;
+}
+
+.data-process li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1em;
+  padding: 20px;
+  display: inline-block;
+}
+
+.data-process li:before {
+  content: '';
+  background-color: rgba(109, 200, 190, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.data-process li:after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  height: 15px;
+  width: 15px;
+  background: $success;
+  border-radius: 50%;
+  z-index: 10;
+  top: -6px;
+}
+
+.data-process li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: $dark
+}
+
+.progress-tabmenu ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+.progress-tabmenu ul li a {
+    position: relative;
+    padding: 0 4rem;
+}
+
+.progress-tabmenu ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+}
+.progress-tabmenu ul li a.active::before {
+    background: $success;
+}
+
+.progress-tabmenu ul li a span {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-left: -10px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    background: $primary;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-tabmenu ul li a.active span {
+    background: $success;
+}
+
+.progress-tabbody {
+    padding: 3rem 0;
+}
