@@ -20,8 +20,8 @@
                         color: $themered;
                     }
                     &.btn {
-                        padding: .8rem 1.5rem;
-                        font-size: 16px;
+                        padding: .6rem 1rem;
+                        font-size: 12px;
                         background: #e3222a;
                         color: #fff;
                     }
@@ -48,6 +48,80 @@
                     font-weight: 700;
                     letter-spacing: 0.05rem;
                     font-size: 16px;
+                }
+            }
+        }
+        .search-box {
+            .input-group-prepend {
+                border: 0;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                span {
+                    position: relative;
+                    border: 0;
+                    background: #fff;
+                    padding: 0.6rem;
+                    min-width: 10em;
+                    &.dropdown-toggle {
+                        &::after {
+                            position: absolute;
+                            right: 0;
+                        }
+                        &::before {
+                            content: "";
+                            width: 1px;
+                            height: 20px;
+                            background: #aaa;
+                            position: absolute;
+                            right: -5px;
+                            z-index: 100;
+                        }
+                    }
+                }
+            }
+            .form-control {
+                border: 0;
+                background: #fff;
+                padding: 0.6rem;
+                height: calc(2em + 0.75rem + 2px);
+                &:focus {
+                    box-shadow: none
+                }
+            }
+            .input-group-append {
+                border: 0;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                background: #fff;
+                span {
+                    border: 0;
+                    background: $themered;
+                    font-size: 20px;
+                    padding: 0 .8rem;
+                    color: #fff;
+                }
+            }
+        }
+        .cart-box {
+            .account {
+                text-align: left;
+                line-height: 18px;
+                color: #fff;
+                text-align: left;
+                text-decoration: none;
+            }
+            .cart {
+                font-size: 25px;
+                color: #fff;
+                text-decoration: none;
+                i {
+                    font-size: 35px;
+                }
+                .cash {
+                    font-size: 14px;
+                    text-align: left;
+                    line-height: 18px;
+                    padding-left: 10px;
                 }
             }
         }
