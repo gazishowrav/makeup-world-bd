@@ -28926,8 +28926,24 @@ main {
     font-size: 25px;
     color: #fff;
     text-decoration: none; }
-    .header .main-header .cart-box .cart i {
-      font-size: 35px; }
+    .header .main-header .cart-box .cart .cart-count {
+      position: relative; }
+      .header .main-header .cart-box .cart .cart-count i {
+        font-size: 35px; }
+      .header .main-header .cart-box .cart .cart-count .count-num {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0px;
+        font-size: 14px;
+        background: #e3222a;
+        color: #fff;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px; }
     .header .main-header .cart-box .cart .cash {
       font-size: 14px;
       text-align: left;

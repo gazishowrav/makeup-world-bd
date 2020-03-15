@@ -114,8 +114,26 @@
                 font-size: 25px;
                 color: #fff;
                 text-decoration: none;
-                i {
-                    font-size: 35px;
+                .cart-count {
+                    position: relative;
+                    i {
+                        font-size: 35px;
+                    }
+                    .count-num {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        margin-top: 0px;
+                        font-size: 14px;
+                        background:$themered;
+                        color: #fff;
+                        width: 18px;
+                        height: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50px;
+                    }
                 }
                 .cash {
                     font-size: 14px;
