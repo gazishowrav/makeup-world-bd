@@ -30,7 +30,7 @@
         }
     }
     .main-header {
-        background: #403f3f;
+        background: #FFD200;
         .btn-catagory {
             background: #d02a31;
             color: #DDDDDD;
@@ -106,13 +106,13 @@
             .account {
                 text-align: left;
                 line-height: 18px;
-                color: #fff;
+                color: $dark;
                 text-align: left;
                 text-decoration: none;
             }
             .cart {
                 font-size: 25px;
-                color: #fff;
+                color: $dark;
                 text-decoration: none;
                 .cart-count {
                     position: relative;
