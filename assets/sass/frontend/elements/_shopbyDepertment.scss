@@ -62,23 +62,61 @@
 			right: 0;
 			margin-top: -70px;
 			.owl-prev {
+				position: relative;
 				font-size: 30px;
 				width: 35px;
+				text-indent: -999px;
+				background: transparent;
+				color: #000;
+				overflow: hidden;
+				&::before {
+					content:"<";
+					position: absolute;
+					left: 0;
+					display: flex;
+				    text-indent: 0px;
+				    align-items: center;
+				    justify-content: center;
+				    width: 100%;
+				}
 				&:focus {
 			    	outline: none;
 			    }
 			    &:hover {
+			    	background: transparent;
 			    	color: #FFD200;
+			    }
+			    span {
+			    	display: none;
 			    }
 			}
 			.owl-next {
+				position: relative;
 				font-size: 30px;
 				width: 35px;
+				text-indent: -999px;
+				background: transparent;
+				color: #000;
+				overflow: hidden;
+				&::before {
+					content:">";
+					position: absolute;
+					left: 0;
+					display: flex;
+				    text-indent: 0px;
+				    align-items: center;
+				    justify-content: center;
+				    width: 100%;
+				}
 				&:focus {
 			    	outline: none;
 			    }
 			    &:hover {
+			    	background: transparent;
 			    	color: #FFD200;
+			    }
+			    span {
+			    	display: none;
 			    }
 			}
 		}
