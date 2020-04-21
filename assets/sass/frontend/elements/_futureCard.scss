@@ -79,3 +79,16 @@
 		}
 	}
 }
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+	.future-card {
+		.card {
+			min-height: 200px;
+			img {
+				height: 100%;
+			}
+		}
+	}
+}

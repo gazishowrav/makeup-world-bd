@@ -185,3 +185,14 @@ $(".close-cart").click(function(){
   $(".details-cart").hide();
   $(".short-cart").show();
 });
+
+// Menu
+
+$(".mobile-collapse-open").click(function(){
+  $(".mobile-collapse").toggleClass("show");
+  $(".mobile-collapse-open").toggleClass("show");
+});
+
+$("#search-box-open").click(function(){
+  $(".mobile-form").toggleClass("show");
+});

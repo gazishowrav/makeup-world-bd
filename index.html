@@ -20,14 +20,74 @@
 				  <a class="navbar-brand" href="#">
 				  	<img src="./assets/img/makeup-world-bd-logo.jpg" alt="makeup-world-bd-logo">
 				  </a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
+				  <button class="btn btn-dark shadow-none mobile-collapse-open">
+				    <span></span>
 				  </button>
 
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <div class="mobile-collapse">
 				    <ul class="navbar-nav m-auto">
 				      <li class="nav-item active">
 				        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="products.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current Offers</a>
+				        <!--Dropdown-->
+				        <div class="dropdown-menu megamenu-lg" aria-labelledby="dropdownMenuButton">
+				            <div class="row">
+				            	<div class="col-lg-4">
+				            		<h4>Top 10</h4>
+				            		<ul class="nav flex-column">
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Bags</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Bags</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Bags</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Bags</a>
+				            			</li>
+				            		</ul>
+				            	</div>
+				            	<div class="col-lg-4">
+				            		<h4>Makup</h4>
+				            		<ul class="nav flex-column">
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Face Makup</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Eye Makup</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Lip Makup</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Nail</a>
+				            			</li>
+				            		</ul>
+				            	</div>
+				            	<div class="col-lg-4">
+				            		<h4>Skin Care</h4>
+				            		<ul class="nav flex-column">
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Face Care</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Eye Care</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Baby Care</a>
+				            			</li>
+				            			<li class="nav-item">
+				            				<a href="#" class="nav-link">Lip Gel & Mask</a>
+				            			</li>
+				            		</ul>
+				            	</div>
+				            </div>
+				          </div>
+				        <!--/Dropdown-->
 				      </li>
 				      <li class="nav-item dropdown">
 				        <a class="nav-link dropdown-toggle" href="products.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current Offers</a>
@@ -188,7 +248,7 @@
 		<div class="main-header">
 			<div class="container-wrapper">
 				<div class="row align-items-center">
-					<div class="col-lg-3">
+					<div class="col-12 col-lg-3">
 						<div class="btn-catagory show">
 							<span class="btn btn-light shadow-none"><i class="mdi mdi-format-list-bulleted"></i></span>
 							<p class="mb-0">Shop By <br>
@@ -229,27 +289,34 @@
 							<!-- /Dropdown Menu -->
 						</div>
 					</div>
-					<div class="col-lg-5">
-						<div class="search-box">
-							<div class="input-group">
-							  <div class="input-group-prepend dropdown">
-							    <span class="input-group-text dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Catagories</span>
-							    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							        <a class="dropdown-item" href="#">Entertainment</a>
-							        <a class="dropdown-item" href="#">Electronic</a>
-							        <a class="dropdown-item" href="#">Packaging & Printing</a>
-							      </div>
-							  </div>
-							  <input type="text" class="form-control" placeholder="Search Products">
-							  <div class="input-group-append">
-							    <span class="input-group-text">
-							    	<i class="mdi mdi-magnify"></i>
-							    </span>
-							  </div>
-							</div>
+					<div class="col-3 col-lg-5">
+						<div class="search-box web-view">
+							<!--form-->
+							<form action="#">
+								<div class="input-group">
+								  <div class="input-group-prepend dropdown">
+								    <span class="input-group-text dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Catagories</span>
+								    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								        <a class="dropdown-item" href="#">Entertainment</a>
+								        <a class="dropdown-item" href="#">Electronic</a>
+								        <a class="dropdown-item" href="#">Packaging & Printing</a>
+								      </div>
+								  </div>
+								  <input type="text" class="form-control" placeholder="Search Products">
+								  <div class="input-group-append">
+								    <span class="input-group-text">
+								    	<i class="mdi mdi-magnify"></i>
+								    </span>
+								  </div>
+								</div>
+							</form>
+							<!--/form-->
+						</div>
+						<div class="search-box mobile-view">
+							<button type="button" id="search-box-open"><span class="mdi mdi-magnify"></span></button>
 						</div>
 					</div>
-					<div class="col-lg-4 text-right">
+					<div class="col-9 col-lg-4 text-right">
 						<div class="cart-box d-flex align-items-center justify-content-end">
 							<a href="signin.html" class="account">
 								Sign in <br>
@@ -269,6 +336,26 @@
 					</div>
 				</div>
 			</div>
+			<!--form-->
+			<div class="mobile-form">
+				<form action="#">
+					  <div class="input-group-prepend dropdown">
+					    <span class="input-group-text dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Catagories</span>
+					    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					        <a class="dropdown-item" href="#">Entertainment</a>
+					        <a class="dropdown-item" href="#">Electronic</a>
+					        <a class="dropdown-item" href="#">Packaging & Printing</a>
+					      </div>
+					  </div>
+					  <input type="text" class="form-control" placeholder="Search Products">
+					  <div class="input-group-append">
+					    <span class="input-group-text">
+					    	<i class="mdi mdi-magnify"></i>
+					    </span>
+					  </div>
+				</form>
+			</div>
+			<!--/form-->
 		</div>
 		<!-- /main header-->
 	</header>

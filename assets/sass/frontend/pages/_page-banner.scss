@@ -1,3 +1,4 @@
+//page banner
 .page-banner {
     position: relative;
     background: #2d2d2d;
@@ -56,5 +57,13 @@
                 color: #f4f4f4;
             }
         }
+    }
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+    .page-banner {
+        margin-top: 15rem;
     }
 }
