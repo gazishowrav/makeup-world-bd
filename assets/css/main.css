@@ -29046,7 +29046,23 @@ main {
   .header .top-header .nav-item:nth-child(8) .megamenu-lg,
   .header .top-header .nav-item:nth-child(9) .megamenu-lg,
   .header .top-header .nav-item:last-child .megamenu-lg {
-    left: -500px; } }
+    left: -500px; }
+
+  .header .main-header .nav-item:first-child .megamenu-lg,
+  .header .main-header .nav-item:nth-child(2) .megamenu-lg,
+  .header .main-header .nav-item:nth-child(3) .megamenu-lg,
+  .header .main-header .nav-item:nth-child(4) .megamenu-lg {
+    left: 100% !important;
+    top: 0 !important; }
+
+  .header .main-header .nav-item:nth-child(5) .megamenu-lg,
+  .header .main-header .nav-item:nth-child(6) .megamenu-lg,
+  .header .main-header .nav-item:nth-child(7) .megamenu-lg,
+  .header .main-header .nav-item:nth-child(8) .megamenu-lg,
+  .header .main-header .nav-item:nth-child(9) .megamenu-lg,
+  .header .main-header .nav-item:last-child .megamenu-lg {
+    left: 100%;
+    top: -170px; } }
 @media (min-width: 768px) {
   .header .top-header .mobile-collapse-open {
     display: none; }
@@ -29125,6 +29141,48 @@ main {
     pointer-events: none; }
   .header .main-header .btn-catagory {
     margin-bottom: 0; }
+    .header .main-header .btn-catagory .nav-item.dropright .dropdown-menu {
+      margin: 0;
+      background-clip: padding-box;
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: -4px 5px 20px 0 rgba(0, 0, 0, 0.3);
+      animation: pullDown 1.1s ease-out;
+      transform-origin: 50% 0%; }
+      .header .main-header .btn-catagory .nav-item.dropright .dropdown-menu h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        border-bottom: 2px dotted #ccc;
+        padding-bottom: 5px;
+        color: #222; }
+      .header .main-header .btn-catagory .nav-item.dropright .dropdown-menu .nav-item .nav-link {
+        position: relative;
+        font-size: 13px;
+        font-weight: 600;
+        color: #2D2D2D;
+        padding: 0.5rem 1.5rem;
+        border-bottom: 0;
+        transition: all 0.3s ease; }
+        .header .main-header .btn-catagory .nav-item.dropright .dropdown-menu .nav-item .nav-link::before {
+          content: "\F13E";
+          font-family: "Material Design Icons";
+          font-weight: normal;
+          position: absolute;
+          left: 0;
+          top: 0.5rem; }
+        .header .main-header .btn-catagory .nav-item.dropright .dropdown-menu .nav-item .nav-link:hover {
+          color: #e3222a; }
+      .header .main-header .btn-catagory .nav-item.dropright .dropdown-menu.megamenu-lg {
+        min-width: 700px;
+        padding: 1.5rem; }
+      .header .main-header .btn-catagory .nav-item.dropright .dropdown-menu.megamenu-md {
+        min-width: 500px;
+        padding: 1.5rem; }
+    .header .main-header .btn-catagory .nav-item.dropright:hover .dropdown-menu {
+      display: block; }
   .header .main-header .search-box.web-view {
     display: block; }
   .header .main-header .search-box.mobile-view {
