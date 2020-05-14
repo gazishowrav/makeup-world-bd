@@ -19,6 +19,7 @@
 			color: $dark;
 			font-size: 16px;
 			font-weight: 700;
+			margin-bottom: 2rem;
 			span {
 				font-size: 12px;
 			    color: #a5a5a5;
@@ -53,6 +54,32 @@
 				.card-body {
 					color: #FFD200;
 				}
+			}
+		}
+		.owl-nav {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: -70px;
+			.owl-prev {
+				font-size: 30px;
+				width: 35px;
+				&:focus {
+			    	outline: none;
+			    }
+			    &:hover {
+			    	color: #FFD200;
+			    }
+			}
+			.owl-next {
+				font-size: 30px;
+				width: 35px;
+				&:focus {
+			    	outline: none;
+			    }
+			    &:hover {
+			    	color: #FFD200;
+			    }
 			}
 		}
 	}
