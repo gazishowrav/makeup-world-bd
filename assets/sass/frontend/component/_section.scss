@@ -74,6 +74,9 @@ main {
     margin-top: 145px;
     min-height: 100vh;
 }
+.page-content {
+    padding: 2.5rem 0;
+}
 .rounded-10 {
     border-radius: 10px;
 }
@@ -92,4 +95,18 @@ main {
 
 .table td {
     vertical-align: middle;
+}
+
+.required-star {
+    position: relative;
+    &::after {
+        content: "*";
+        position: absolute;
+        font-size: 30px;
+        color: $themered;
+        padding-left: 5px;
+        top: 0;
+        left: 0;
+        margin-top: -10px;
+    }
 }

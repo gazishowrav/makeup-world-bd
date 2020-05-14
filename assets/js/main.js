@@ -155,10 +155,10 @@ $(window).scroll(function() {
 
     if (scroll >= 75) {
         $(".header").addClass("header-fixed");
-        $(".btn-catagory").removeClass("show");
+        //$(".btn-catagory").removeClass("show");
     } else {
         $(".header").removeClass("header-fixed");
-        $(".btn-catagory").addClass("show");
+        //$(".btn-catagory").addClass("show");
     }
 });
 
@@ -184,4 +184,15 @@ $(".cart-btn").click(function(){
 $(".close-cart").click(function(){
   $(".details-cart").hide();
   $(".short-cart").show();
+});
+
+// Menu
+
+$(".mobile-collapse-open").click(function(){
+  $(".mobile-collapse").toggleClass("show");
+  $(".mobile-collapse-open").toggleClass("show");
+});
+
+$("#search-box-open").click(function(){
+  $(".mobile-form").toggleClass("show");
 });
